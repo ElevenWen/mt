@@ -1,0 +1,215 @@
+//  out: index.wxss, compress:true, sourceMap:false 
+.container{
+    background: #f4f4f4 !important;
+}
+.headerWrap{
+    position: relative;
+    background: #fff;
+}
+.headerImg{
+    width: 750rpx;
+    height: 336rpx;
+    background-size: 100%;
+}
+.positiveWrap{
+    width: 280rpx;
+    height: 56rpx;
+    background: #b18720;
+    position: absolute;
+    top: 20rpx;
+    left: 50rpx;
+    border-radius: 30rpx;
+    .province{
+        display: inline-block;
+        position: absolute;
+        color: #fff;
+        font-size: 26rpx;
+        line-height: 56rpx;
+        margin-left: 15rpx;
+        width: 180rpx;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .icon-dingwei{
+        display: inline-block;
+        margin: 12rpx 0 0 16rpx;
+        color: #fff;
+    }
+    .icon-xiangyou{
+        display: inline-block;
+        float: right;
+        color: #fff;
+        margin: 14rpx 20rpx 0 0;
+    }
+}
+.sourWrap{
+    position: absolute;
+    top: 20rpx;
+    right: 52rpx;
+    width: 340rpx;
+    height: 56rpx;
+    background: #fff;
+    border-radius: 30rpx;
+    .icon-sousuo{
+        display: inline-block;
+        font-weight: 600;
+        margin: 12rpx 0 0 20rpx;
+        color: #979797;
+    }
+    .sourword{
+        display: inline-block;
+        font-size: 28rpx;
+        color: #979797;
+    }   
+}
+// 轮播
+.swiperWrap{
+    width: 750rpx;
+    height: 400rpx;
+    background: #fff;
+    .bbb{
+        height: 390rpx;
+    }
+    .card{
+        margin-top: 20rpx;
+        display: flex;
+        // 换行 == 第一行在最上面
+        flex-wrap:wrap;
+    }
+    .swiperItme{
+        width: 25%;
+        display: flex;
+        // 排列方向 == 垂直排列
+        flex-direction:column;
+        align-items: center;
+    }
+    .slide-image{
+        width: 100rpx;
+        height: 100rpx;
+        background-size: 100%;
+    }
+    .swiperWord{
+        font-size: 28rpx;
+        text-align: center;
+        margin-top: 10rpx;
+    }
+}
+// 列表
+.listWrap{
+    width: 100%;
+    height: 300rpx;
+    margin-top: 150rpx;
+    background: #fff;
+    .top_placeholder_inner{
+        width: 300rpx;
+        margin: 34rpx auto;
+        font-size: 32rpx;
+        text-align: center;
+        position: relative;
+    }
+    .top_placeholder_inner::before,.top_placeholder_inner::after {
+        content: '';
+        position: absolute;
+        top: 20rpx;
+        width: 80rpx;
+        height: 0;
+        font-size: 0;
+        border-top: 1px solid #333;
+        -webkit-transform: scaleY(0.5);
+        -moz-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+    }
+    .top_placeholder_inner::before{
+        left: -5rpx;
+    }
+    .top_placeholder_inner::after{
+        right: 5rpx;
+    }
+    .listDetailWrap{
+        width: 100%;
+        height: 180rpx;
+        padding: 24rpx 0;
+        margin-left: 20rpx;
+        display: flex;
+        border-bottom: 1px solid #ccc;
+        position: relative;
+        img{
+            // width: 172rpx;
+            // height: 130rpx;
+            background-size: 100%;
+            display: inline-block;
+        }
+        .brand{
+            position: absolute;
+            width: 56rpx;
+            height: 28rpx;
+            background: #FFD161;
+            color: #fff;
+            font-size: 20rpx;
+            text-align: center;
+            top: 25rpx;
+            left: 0;
+        }
+        .rightDetailWrap{
+            width: 80%;
+            display: inline-block;
+            flex-direction:column;
+            margin-left: 20rpx;
+        }
+        .detailTitle{
+            font-size: 32rpx;
+        }
+        .detailInfoWrap{
+            .rate{
+                position: relative;
+                display: flex;
+            }
+            view{
+                display: inline-block;
+                font-size: 24rpx;
+                color: #656565;
+            }
+            .emptyStar{
+                color: #FFD161;
+            }
+            .star{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                overflow: hidden;
+                color: #FFD161;
+            }
+            .monthSale{
+                margin-left: 15rpx;
+            }
+            .distance{
+                margin-left: 130rpx;
+                // float: right;
+                // margin-right: 20rpx;
+            }
+            .ticket{
+                display: block;
+                padding-top: 20rpx;
+                text{
+                    display: inline-block;
+                    width: 28rpx;
+                    height: 28rpx;
+                    font-size: 20rpx;
+                    border: 1px solid #4C97F1;
+                    text-align: center;
+                    color: #4C97F1;
+                    vertical-align: top;
+                }
+                view{
+                    width: 80%;
+                    margin-left: 10rpx;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+}

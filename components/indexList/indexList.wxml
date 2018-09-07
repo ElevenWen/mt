@@ -1,0 +1,22 @@
+<view class="listDetailWrap" >
+  <image src="http://p0.meituan.net/0.84.63/xianfu/aa86bc1b9a218ea5e094b861c03b59b94873.jpg.webp" 
+         mode="widthFix" style="width: 172rpx;height: 130rpx;" class="detailImg"></image>
+  <text class="brand">品牌</text>
+  <view class="rightDetailWrap">
+    <view class="detailTitle">深圳麦当劳兴华一路餐厅</view>
+    <view class="detailInfoWrap">
+      <view class="rate">
+        <view class="emptyStar">☆☆☆☆☆</view>
+        <!-- style="width:{{starStyle}}"  有问题 -->
+        <view class="star" style="width:2.35em">★★★★★</view>
+        <view class="monthSale">月售999+</view>
+        <view class="distance">30min | 992m</view>
+      </view>
+      <view class="distribution">起送价¥ 0 | 配送¥ 9 </view>
+      <view class="ticket">
+        <text>票</text>
+        <view>本店支持开发票，开票金额0元地方地方大幅度</view>
+      </view>
+    </view>
+  </view>
+</view>

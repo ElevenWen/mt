@@ -1,0 +1,34 @@
+.swiperWrap {
+    width: 750rpx;
+    height: 400rpx;
+    background: #fff
+}
+
+.swiperWrap .bbb {
+    height: 390rpx
+}
+
+.swiperWrap .card {
+    margin-top: 20rpx;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.swiperWrap .swiperItme {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.swiperWrap .slide-image {
+    width: 100rpx;
+    height: 100rpx;
+    background-size: 100%
+}
+
+.swiperWrap .swiperWord {
+    font-size: 28rpx;
+    text-align: center;
+    margin-top: 10rpx
+}

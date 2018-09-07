@@ -1,0 +1,32 @@
+
+.container {
+width: auto;
+margin: 30rpx;
+background-color: #fff;
+text-align: center;
+}
+ 
+.price {
+position: relative;
+display: inline-block;
+font-size: 78rpx;
+color: red;
+}
+ 
+.price::before {
+content: "金额：¥";
+position: absolute;
+font-size: 40rpx;
+top: 30rpx;
+left: -160rpx;
+color: black;
+}
+ 
+.price::after {
+content: ".00 元";
+font-size: 30rpx;
+top: 40rpx;
+position: absolute;
+right: -90rpx;
+color: black;
+}

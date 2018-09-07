@@ -1,0 +1,3 @@
+<template name="test">
+    <view>我是通过模板引入进来的{{aaa}}</view>
+</template>

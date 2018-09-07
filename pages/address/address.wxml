@@ -1,0 +1,23 @@
+<view class="container">
+  <!-- 头部 -->
+  <view class="headerS">
+    <view class="iconfont icon-sousuo"></view>
+    <input class="searchAddr" placeholder="请输入地址"/>
+  </view>
+  <view class="currentAddr">猜您当前位于：<text>深圳市-广东省</text></view>
+  <!-- 地址 -->
+  <view class="addrWrap">
+    <scroll-view scroll-y="true" scroll-into-view="{{scrollTop}}" style="height: 500px;">
+      <view class="letter" wx:for="{{addressArr}}" wx:key="index" id="{{item.idx}}">
+        <view class="letterr">{{item.idx}}</view>
+        <view class="letterDetailWrap">
+            <view class="letterDetail" wx:for="{{item.cities}}" wx:key="index">{{item.city_name}}</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 右边的A-Z -->
+  <view class="rightLetterWrap">
+    <view class="rightLetter" wx:for="{{letterArr}}" wx:key="{{index}}" bindtap="selectCity" data-id="{{item.idx}}">{{item.idx}}</view>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+    <!-- 头部 -->
+    <view class="headerSearch">
+        <view class="iconfont icon-sousuo"></view>
+        <input placeholder="请输入商家或商家名称"/>
+        <view class="search">搜索</view>
+    </view>
+    <!-- 热门搜索 -->
+    <view class="hotSearchWrap">
+        <view class="hotSearch">热门搜索</view>
+    </view>
+    <!-- 搜索记录 -->
+    <view class="searchRecord">
+        <text class="searchContent">绝味鸭脖</text>
+        <text class="searchContent">苏东坡红烧肉</text>
+        <text class="searchContent">真功夫</text>
+    </view>
+</view>

@@ -1,0 +1,116 @@
+//  out: indexList.wxss, compress:true, sourceMap:false 
+.listWrap{
+    width: 100%;
+    height: 300rpx;
+    margin-top: 150rpx;
+    background: #fff;
+}
+.top_placeholder_inner{
+    width: 300rpx;
+    margin: 34rpx auto;
+    font-size: 32rpx;
+    text-align: center;
+    position: relative;
+}
+.top_placeholder_inner::before,.top_placeholder_inner::after {
+    content: '';
+    position: absolute;
+    top: 20rpx;
+    width: 80rpx;
+    height: 0;
+    font-size: 0;
+    border-top: 1px solid #333;
+    -webkit-transform: scaleY(0.5);
+    -moz-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+.top_placeholder_inner::before{
+    left: -5rpx;
+}
+.top_placeholder_inner::after{
+    right: 5rpx;
+}
+.listDetailWrap{
+    width: 100%;
+    height: 180rpx;
+    padding: 24rpx 0;
+    margin-left: 20rpx;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.detailImg{
+    // width: 172rpx;
+    // height: 130rpx;
+    background-size: 100%;
+    display: inline-block;
+}
+.brand{
+    position: absolute;
+    width: 56rpx;
+    height: 28rpx;
+    background: #FFD161;
+    color: #fff;
+    font-size: 20rpx;
+    text-align: center;
+    top: 25rpx;
+    left: 0;
+}
+.rightDetailWrap{
+    width: 80%;
+    display: inline-block;
+    flex-direction:column;
+    margin-left: 20rpx;
+}
+.detailTitle{
+    font-size: 32rpx;
+}
+.rate{
+    position: relative;
+    display: flex;
+}
+.emptyStar{
+    color: #FFD161 !important;
+}
+.star{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    overflow: hidden;
+    color: #FFD161 !important;
+}
+.monthSale{
+    margin-left: 15rpx;
+}
+.distance{
+    margin-left: 130rpx;
+}
+.detailInfoWrap{
+    view{
+        display: inline-block;
+        font-size: 24rpx;
+        color: #656565;
+    }
+}
+.ticket{
+    display: block;
+    padding-top: 20rpx;
+    text{
+        display: inline-block;
+        width: 28rpx;
+        height: 28rpx;
+        font-size: 20rpx;
+        border: 1px solid #4C97F1;
+        text-align: center;
+        color: #4C97F1;
+        vertical-align: top;
+    }
+    view{
+        width: 80%;
+        margin-left: 10rpx;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}

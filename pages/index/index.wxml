@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="headerWrap">
+    <image src="../img/header.jpg" class="headerImg" mode="widthFix"></image>
+    <view class="positiveWrap" bindtap="toAddress">
+      <view class="iconfont icon-dingwei"></view>
+      <view class="province">{{currentAddr}}</view>
+      <view class="iconfont icon-xiangyou"></view>
+    </view>
+    <view class="sourWrap" bindtap="toSearch">
+        <view class="iconfont icon-sousuo"></view>
+        <text class="sourword">鸡排</text>
+    </view>
+     <!-- <import src="../../components/test.wxml"/>
+    <template is="test" data="{{aaa:aaa}}"></template> -->
+  </view>
+  <!-- 轮播图 -->
+  <swiper ></swiper>
+  <!-- 列表 -->
+  <view class="listWrap">
+    <view class="top_placeholder_inner">附近商家</view>
+    <indexList wx:for="{{5}}" wx:key="{{index}}"></indexList>
+  </view>
+</view>

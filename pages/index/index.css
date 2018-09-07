@@ -1,0 +1,49 @@
+.headerWrap {
+  position: relative;
+}
+.headerImg {
+  width: 750rpx;
+  height: 336rpx;
+  background-size: 100%;
+}
+.positiveWrap {
+  width: 280rpx;
+  height: 56rpx;
+  background: #b18720;
+  position: absolute;
+  top: 20rpx;
+  left: 50rpx;
+  border-radius: 30rpx;
+}
+.province {
+  display: inline-block;
+  position: absolute;
+  color: #fff;
+  font-size: 26rpx;
+  line-height: 56rpx;
+  margin-left: 15rpx;
+}
+.icon-dingwei {
+  display: inline-block;
+  margin: 12rpx 0 0 16rpx;
+  color: #fff;
+}
+.icon-xiangyou {
+  display: inline-block;
+  float: right;
+  color: #fff;
+  margin: 14rpx 20rpx 0 0;
+}
+.sourWrap {
+  position: absolute;
+  top: 20rpx;
+  right: 52rpx;
+  width: 340rpx;
+  height: 56rpx;
+  background: #fff;
+  border-radius: 30rpx;
+}
+.icon-sousuo {
+  font-weight: 600;
+  margin: 12rpx 0 0 20rpx;
+}
